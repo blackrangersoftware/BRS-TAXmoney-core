@@ -677,16 +677,27 @@ namespace nodetool
     if (m_nettype == cryptonote::TESTNET)
     {
       full_addrs.insert("167.172.30.70:65080");
+      full_addrs.insert("167.172.30.70:65080");
+      full_addrs.insert("167.172.30.70:65080");
     }
     else if (m_nettype == cryptonote::STAGENET)
     {
-      full_addrs.insert("167.172.30.70:65080");
+      full_addrs.insert("167.172.30.70:65081");
+      full_addrs.insert("167.172.30.70:65081");
+    }
     else if (m_nettype == cryptonote::FAKECHAIN)
     {
     }
     else
     {
-      full_addrs.insert("167.172.30.70:65080");
+      full_addrs.insert("167.172.30.70:65082");
+      full_addrs.insert("167.172.30.70:65082");
+      full_addrs.insert("167.172.30.70:65082");
+      full_addrs.insert("167.172.30.70:65082");
+      full_addrs.insert("167.172.30.70:65082");
+      full_addrs.insert("167.172.30.70:65082");
+      full_addrs.insert("167.172.30.70:65082");
+      full_addrs.insert("167.172.30.70:65082");
     }
     return full_addrs;
   }
