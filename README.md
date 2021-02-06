@@ -8,6 +8,10 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
 
 Monero was chosen as the base code for this project based upon its proven stability in the markets, social acceptance, and the code.
 
+Most everything will remain AS-IS with the exception of branding for the sake of continuity in the use of current code from the upstream.
+
+We see this project as a possible means of supporting the use of crypro* to pay the taxes due within governments, so that it can be paid from within the accepted ecosystems and markets, an thereby ease to burden of paying thos taxes.
+
 ## Table of Contents
 
   - [Development resources](#development-resources)
