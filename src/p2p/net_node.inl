@@ -70,7 +70,7 @@
 
 #define NET_MAKE_IP(b1,b2,b3,b4)  ((LPARAM)(((DWORD)(b1)<<24)+((DWORD)(b2)<<16)+((DWORD)(b3)<<8)+((DWORD)(b4))))
 
-#define MIN_WANTED_SEED_NODES 12
+#define MIN_WANTED_seed_nodes 12
 
 static inline boost::asio::ip::address_v4 make_address_v4_from_v6(const boost::asio::ip::address_v6& a)
 {
@@ -670,34 +670,23 @@ namespace nodetool
   }
 
   //-----------------------------------------------------------------------------------
-  template<class t_payload_net_handler>
+   template<class t_payload_net_handler>
   std::set<std::string> node_server<t_payload_net_handler>::get_ip_seed_nodes() const
   {
-    std::set<std::string> full_addrs;
+   std::set<std::string> full_addrs;
     if (m_nettype == cryptonote::TESTNET)
     {
-      full_addrs.insert("212.83.175.67:28080");
-      full_addrs.insert("212.83.172.165:28080");
-      full_addrs.insert("192.110.160.146:28080");
+      full_addrs.insert("167.172.30.70:65080");
     }
     else if (m_nettype == cryptonote::STAGENET)
     {
-      full_addrs.insert("162.210.173.150:38080");
-      full_addrs.insert("192.110.160.146:38080");
-    }
+      full_addrs.insert("167.172.30.70:65080");
     else if (m_nettype == cryptonote::FAKECHAIN)
     {
     }
     else
     {
-      full_addrs.insert("212.83.175.67:18080");
-      full_addrs.insert("212.83.172.165:18080");
-      full_addrs.insert("192.110.160.146:18080");
-      full_addrs.insert("88.198.163.90:18080");
-      full_addrs.insert("95.217.25.101:18080");
-      full_addrs.insert("209.250.243.248:18080");
-      full_addrs.insert("104.238.221.81:18080");
-      full_addrs.insert("66.85.74.134:18080");
+      full_addrs.insert("167.172.30.70:65080");
     }
     return full_addrs;
   }
@@ -796,7 +785,7 @@ namespace nodetool
     }
 
     // append the fallback nodes if we have too few seed nodes to start with
-    if (full_addrs.size() < MIN_WANTED_SEED_NODES)
+    if (full_addrs.size() < MIN_WANTED_seed_nodes)
     {
       if (full_addrs.empty())
         MINFO("DNS seed node lookup either timed out or failed, falling back to defaults");
