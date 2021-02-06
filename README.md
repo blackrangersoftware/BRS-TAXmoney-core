@@ -1,7 +1,12 @@
-# Monero
+# TAXnero
 
+Copyright (c) 2016-2021 Texas Foundation.   
 Copyright (c) 2014-2020 The Monero Project.   
 Portions Copyright (c) 2012-2013 The Cryptonote developers.
+
+# TAXnero
+
+Monero was chosen as the base code for this project based upon its proven stability in the markets, social acceptance, and the code.
 
 ## Table of Contents
 
